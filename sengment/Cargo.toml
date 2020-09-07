@@ -1,0 +1,16 @@
+[package]
+name = "segment"
+version = "0.1.0"
+authors = ["lmawc"]
+edition = "2020"
+
+[lib]
+name = "segment_lib"
+path = "src/lib.rs"
+crate-type =["cdylib"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+wasm-bindgen = "=0.2.61"
+jieba-rs = "0.6"
